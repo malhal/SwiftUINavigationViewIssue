@@ -13,6 +13,9 @@
 		7327C6E827FEE5D8000B6B30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7327C6E727FEE5D8000B6B30 /* Preview Assets.xcassets */; };
 		7327C6EA27FEE5D8000B6B30 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327C6E927FEE5D8000B6B30 /* Persistence.swift */; };
 		7327C6ED27FEE5D8000B6B30 /* SwiftUINavigationViewIssue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7327C6EB27FEE5D8000B6B30 /* SwiftUINavigationViewIssue.xcdatamodeld */; };
+		7327C6F427FEE668000B6B30 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327C6F327FEE668000B6B30 /* ItemDetail.swift */; };
+		7327C6F627FEE7B2000B6B30 /* DateEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327C6F527FEE7B2000B6B30 /* DateEditor.swift */; };
+		7327C6F827FEE825000B6B30 /* Item+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327C6F727FEE825000B6B30 /* Item+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		7327C6E727FEE5D8000B6B30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7327C6E927FEE5D8000B6B30 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7327C6EC27FEE5D8000B6B30 /* SwiftUINavigationViewIssue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUINavigationViewIssue.xcdatamodel; sourceTree = "<group>"; };
+		7327C6F327FEE668000B6B30 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		7327C6F527FEE7B2000B6B30 /* DateEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEditor.swift; sourceTree = "<group>"; };
+		7327C6F727FEE825000B6B30 /* Item+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			children = (
 				7327C6E027FEE5D6000B6B30 /* SwiftUINavigationViewIssueApp.swift */,
 				7327C6E227FEE5D6000B6B30 /* ContentView.swift */,
+				7327C6F727FEE825000B6B30 /* Item+.swift */,
+				7327C6F327FEE668000B6B30 /* ItemDetail.swift */,
+				7327C6F527FEE7B2000B6B30 /* DateEditor.swift */,
 				7327C6E427FEE5D8000B6B30 /* Assets.xcassets */,
 				7327C6E927FEE5D8000B6B30 /* Persistence.swift */,
 				7327C6EB27FEE5D8000B6B30 /* SwiftUINavigationViewIssue.xcdatamodeld */,
@@ -143,9 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7327C6F827FEE825000B6B30 /* Item+.swift in Sources */,
+				7327C6F627FEE7B2000B6B30 /* DateEditor.swift in Sources */,
 				7327C6EA27FEE5D8000B6B30 /* Persistence.swift in Sources */,
 				7327C6E327FEE5D6000B6B30 /* ContentView.swift in Sources */,
 				7327C6ED27FEE5D8000B6B30 /* SwiftUINavigationViewIssue.xcdatamodeld in Sources */,
+				7327C6F427FEE668000B6B30 /* ItemDetail.swift in Sources */,
 				7327C6E127FEE5D6000B6B30 /* SwiftUINavigationViewIssueApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
