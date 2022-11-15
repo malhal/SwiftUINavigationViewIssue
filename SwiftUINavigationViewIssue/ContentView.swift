@@ -15,14 +15,14 @@ struct ContentView: View {
         sectionIdentifier: \.monthAndYear, sortDescriptors: [SortDescriptor(\.timestamp)]
     ) private var items: SectionedFetchResults<String, Item>
     
+    @State private var selectedItem: Item? // Single selection.
+    
     var body: some View {
-        NavigationView {
-            List(items) { section in
+        NavigationSplitView {
+            List(items, selection: $selectedItem) { section in
                 Section(header: Text(section.id)) {
                     ForEach(section) { item in
-                        NavigationLink {
-                            ItemDetail(item: item)
-                        } label: {
+                        NavigationLink(value: item) {
                             Text(item.timestamp!.formatted())
                         }
                     }
@@ -34,6 +34,13 @@ struct ContentView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
+            }
+        } detail: {
+            if let item = selectedItem {
+                ItemDetail(item: item)
+            }
+            else {
+                Text("Select Item")
             }
         }
     }
