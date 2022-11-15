@@ -16,17 +16,18 @@ struct ContentView: View {
     ) private var items: SectionedFetchResults<String, Item>
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(items) { section in
                 Section(header: Text(section.id)) {
                     ForEach(section) { item in
-                        NavigationLink {
-                            ItemDetail(item: item)
-                        } label: {
+                        NavigationLink(value: item) {
                             Text(item.timestamp!.formatted())
                         }
                     }
                 }
+            }
+            .navigationDestination(for: Item.self) { item in
+                ItemDetail(item: item)
             }
             .toolbar {
                 ToolbarItem {
